@@ -94,7 +94,7 @@ end
 class String
   def substrings(length = nil)
     substring = []
-    lengths = length || false
+    length = length || false
     self.split("").each_with_index do |sub1, idx1|
       substring << sub1
       self.split("").each_with_index do |sub2, idx2|
@@ -105,8 +105,7 @@ class String
     end
 
     if length
-      p length
-      return substring.select {|ele| ele.length = length}
+      return substring.select {|ele| ele.length == length}
     else
       return substring
     end
