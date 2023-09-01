@@ -68,6 +68,10 @@ def sum_array(array)
   array[0] + sum_array(array[1..-1])
 end
 
+# return 0 if array.empty?
+# array[0] + sum_array(array[1..-1])
+# 
+
 
 # Write a method, reverse_string(str), that takes in a string.
 # The method should return the string with its characters in reverse order.
